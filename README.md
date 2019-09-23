@@ -1,2 +1,2 @@
 # SalesApp
-Sales Application
+Sales Application (Windows Form - WF)
