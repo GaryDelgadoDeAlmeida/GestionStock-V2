@@ -65,7 +65,20 @@ namespace InterfaceUserModern2.View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            this.OpenForms(new DeleteProduct());
+            DeleteProduct deleteProduct = new DeleteProduct();
+            string[] data = new string[this.ltPct.dataGridListProducts.Rows.Count];
+
+            for(int i = 0; i < this.ltPct.dataGridListProducts.Rows.Count - 1; i++)
+            {
+                data[i] = this.ltPct.dataGridListProducts.Rows[i].Cells[0].Value.ToString() + " " + this.ltPct.dataGridListProducts.Rows[i].Cells[1].Value.ToString();
+            }
+
+            for(int i = 0; i < data.Length - 1; i++)
+            {
+                deleteProduct.cmbDeleteProduct.Items.Add(data[i]);
+            }
+            
+            this.OpenForms(deleteProduct);
         }
 
         private void btnProductList_Click(object sender, EventArgs e)
