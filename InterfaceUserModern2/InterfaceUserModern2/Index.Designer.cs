@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlHead = new System.Windows.Forms.Panel();
-            this.pnlContainer = new System.Windows.Forms.Panel();
-            this.picNormalize = new System.Windows.Forms.PictureBox();
-            this.picMinimize = new System.Windows.Forms.PictureBox();
-            this.picMaximize = new System.Windows.Forms.PictureBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
-            this.picMenuBar = new System.Windows.Forms.PictureBox();
             this.picPortFolio = new System.Windows.Forms.PictureBox();
             this.picGitHub = new System.Windows.Forms.PictureBox();
             this.picLinkedIn = new System.Windows.Forms.PictureBox();
@@ -49,17 +42,24 @@
             this.btnClient = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
+            this.pnlHead = new System.Windows.Forms.Panel();
+            this.picNormalize = new System.Windows.Forms.PictureBox();
+            this.picMinimize = new System.Windows.Forms.PictureBox();
+            this.picMaximize = new System.Windows.Forms.PictureBox();
+            this.picClose = new System.Windows.Forms.PictureBox();
+            this.picMenuBar = new System.Windows.Forms.PictureBox();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPortFolio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGitHub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLinkedIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.pnlHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNormalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPortFolio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGitHub)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLinkedIn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -79,110 +79,16 @@
             this.pnlMenu.Controls.Add(this.btnProducts);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(267, 640);
+            this.pnlMenu.Size = new System.Drawing.Size(267, 701);
             this.pnlMenu.TabIndex = 0;
-            // 
-            // pnlHead
-            // 
-            this.pnlHead.Controls.Add(this.picNormalize);
-            this.pnlHead.Controls.Add(this.picMinimize);
-            this.pnlHead.Controls.Add(this.picMaximize);
-            this.pnlHead.Controls.Add(this.picClose);
-            this.pnlHead.Controls.Add(this.picMenuBar);
-            this.pnlHead.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHead.Location = new System.Drawing.Point(267, 0);
-            this.pnlHead.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlHead.Name = "pnlHead";
-            this.pnlHead.Size = new System.Drawing.Size(1200, 37);
-            this.pnlHead.TabIndex = 1;
-            this.pnlHead.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlHead_MouseDown);
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContainer.Location = new System.Drawing.Point(267, 37);
-            this.pnlContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1200, 603);
-            this.pnlContainer.TabIndex = 2;
-            // 
-            // picNormalize
-            // 
-            this.picNormalize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picNormalize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picNormalize.Image = ((System.Drawing.Image)(resources.GetObject("picNormalize.Image")));
-            this.picNormalize.Location = new System.Drawing.Point(1120, 5);
-            this.picNormalize.Margin = new System.Windows.Forms.Padding(4);
-            this.picNormalize.Name = "picNormalize";
-            this.picNormalize.Size = new System.Drawing.Size(33, 26);
-            this.picNormalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picNormalize.TabIndex = 1;
-            this.picNormalize.TabStop = false;
-            this.picNormalize.Visible = false;
-            this.picNormalize.Click += new System.EventHandler(this.picNormalize_Click);
-            // 
-            // picMinimize
-            // 
-            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMinimize.Image = ((System.Drawing.Image)(resources.GetObject("picMinimize.Image")));
-            this.picMinimize.Location = new System.Drawing.Point(1079, 5);
-            this.picMinimize.Margin = new System.Windows.Forms.Padding(4);
-            this.picMinimize.Name = "picMinimize";
-            this.picMinimize.Size = new System.Drawing.Size(33, 26);
-            this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMinimize.TabIndex = 1;
-            this.picMinimize.TabStop = false;
-            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
-            // 
-            // picMaximize
-            // 
-            this.picMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMaximize.Image = ((System.Drawing.Image)(resources.GetObject("picMaximize.Image")));
-            this.picMaximize.Location = new System.Drawing.Point(1120, 5);
-            this.picMaximize.Margin = new System.Windows.Forms.Padding(4);
-            this.picMaximize.Name = "picMaximize";
-            this.picMaximize.Size = new System.Drawing.Size(33, 26);
-            this.picMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMaximize.TabIndex = 1;
-            this.picMaximize.TabStop = false;
-            this.picMaximize.Click += new System.EventHandler(this.picMaximize_Click);
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(1161, 5);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(33, 26);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
-            // 
-            // picMenuBar
-            // 
-            this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMenuBar.Image = ((System.Drawing.Image)(resources.GetObject("picMenuBar.Image")));
-            this.picMenuBar.Location = new System.Drawing.Point(8, 4);
-            this.picMenuBar.Margin = new System.Windows.Forms.Padding(4);
-            this.picMenuBar.Name = "picMenuBar";
-            this.picMenuBar.Size = new System.Drawing.Size(33, 26);
-            this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMenuBar.TabIndex = 0;
-            this.picMenuBar.TabStop = false;
-            this.picMenuBar.Click += new System.EventHandler(this.picMenuBar_Click);
             // 
             // picPortFolio
             // 
             this.picPortFolio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPortFolio.Image = global::InterfaceUserModern2.Properties.Resources.cropped_Favicon;
-            this.picPortFolio.Location = new System.Drawing.Point(192, 598);
+            this.picPortFolio.Location = new System.Drawing.Point(192, 657);
             this.picPortFolio.Name = "picPortFolio";
             this.picPortFolio.Size = new System.Drawing.Size(30, 30);
             this.picPortFolio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,7 +100,7 @@
             // 
             this.picGitHub.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picGitHub.Image = global::InterfaceUserModern2.Properties.Resources.github;
-            this.picGitHub.Location = new System.Drawing.Point(111, 598);
+            this.picGitHub.Location = new System.Drawing.Point(117, 657);
             this.picGitHub.Name = "picGitHub";
             this.picGitHub.Size = new System.Drawing.Size(30, 30);
             this.picGitHub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +112,7 @@
             // 
             this.picLinkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picLinkedIn.Image = global::InterfaceUserModern2.Properties.Resources.linkedin;
-            this.picLinkedIn.Location = new System.Drawing.Point(42, 598);
+            this.picLinkedIn.Location = new System.Drawing.Point(42, 657);
             this.picLinkedIn.Name = "picLinkedIn";
             this.picLinkedIn.Size = new System.Drawing.Size(30, 30);
             this.picLinkedIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,30 +283,124 @@
             this.btnProducts.UseVisualStyleBackColor = true;
             this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
+            // pnlHead
+            // 
+            this.pnlHead.Controls.Add(this.picNormalize);
+            this.pnlHead.Controls.Add(this.picMinimize);
+            this.pnlHead.Controls.Add(this.picMaximize);
+            this.pnlHead.Controls.Add(this.picClose);
+            this.pnlHead.Controls.Add(this.picMenuBar);
+            this.pnlHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHead.Location = new System.Drawing.Point(267, 0);
+            this.pnlHead.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlHead.Name = "pnlHead";
+            this.pnlHead.Size = new System.Drawing.Size(1200, 37);
+            this.pnlHead.TabIndex = 1;
+            this.pnlHead.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlHead_MouseDown);
+            // 
+            // picNormalize
+            // 
+            this.picNormalize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picNormalize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNormalize.Image = ((System.Drawing.Image)(resources.GetObject("picNormalize.Image")));
+            this.picNormalize.Location = new System.Drawing.Point(1120, 5);
+            this.picNormalize.Margin = new System.Windows.Forms.Padding(4);
+            this.picNormalize.Name = "picNormalize";
+            this.picNormalize.Size = new System.Drawing.Size(33, 26);
+            this.picNormalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNormalize.TabIndex = 1;
+            this.picNormalize.TabStop = false;
+            this.picNormalize.Visible = false;
+            this.picNormalize.Click += new System.EventHandler(this.picNormalize_Click);
+            // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMinimize.Image = ((System.Drawing.Image)(resources.GetObject("picMinimize.Image")));
+            this.picMinimize.Location = new System.Drawing.Point(1079, 5);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.Size = new System.Drawing.Size(33, 26);
+            this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMinimize.TabIndex = 1;
+            this.picMinimize.TabStop = false;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
+            // picMaximize
+            // 
+            this.picMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMaximize.Image = ((System.Drawing.Image)(resources.GetObject("picMaximize.Image")));
+            this.picMaximize.Location = new System.Drawing.Point(1120, 5);
+            this.picMaximize.Margin = new System.Windows.Forms.Padding(4);
+            this.picMaximize.Name = "picMaximize";
+            this.picMaximize.Size = new System.Drawing.Size(33, 26);
+            this.picMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMaximize.TabIndex = 1;
+            this.picMaximize.TabStop = false;
+            this.picMaximize.Click += new System.EventHandler(this.picMaximize_Click);
+            // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(1161, 5);
+            this.picClose.Margin = new System.Windows.Forms.Padding(4);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(33, 26);
+            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picClose.TabIndex = 1;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
+            // picMenuBar
+            // 
+            this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMenuBar.Image = ((System.Drawing.Image)(resources.GetObject("picMenuBar.Image")));
+            this.picMenuBar.Location = new System.Drawing.Point(8, 4);
+            this.picMenuBar.Margin = new System.Windows.Forms.Padding(4);
+            this.picMenuBar.Name = "picMenuBar";
+            this.picMenuBar.Size = new System.Drawing.Size(33, 26);
+            this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMenuBar.TabIndex = 0;
+            this.picMenuBar.TabStop = false;
+            this.picMenuBar.Click += new System.EventHandler(this.picMenuBar_Click);
+            // 
+            // pnlContainer
+            // 
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContainer.Location = new System.Drawing.Point(267, 37);
+            this.pnlContainer.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1200, 664);
+            this.pnlContainer.TabIndex = 2;
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 640);
+            this.ClientSize = new System.Drawing.Size(1467, 701);
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.pnlHead);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picPortFolio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGitHub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLinkedIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.pnlHead.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picNormalize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPortFolio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGitHub)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLinkedIn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.ResumeLayout(false);
 
         }
