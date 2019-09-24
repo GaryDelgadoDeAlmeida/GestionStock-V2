@@ -38,21 +38,9 @@ namespace InterfaceUserModern2.View
             fS.Show();
         }
 
-        /// <summary>
-        /// Ferme le formulaire "Products.cs"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
             this.OpenForms(new AddProduct());
-            this.btnProductList.Visible = true;
-            this.btnEdit.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -71,22 +59,20 @@ namespace InterfaceUserModern2.View
             }
             else
                 MessageBox.Show("You need to select a row to edit a product.");
-            this.btnEdit.Visible = false;
-            this.btnProductList.Visible = true;
+            this.btnProductList.Enabled = true;
+            this.btnEdit.Enabled = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             this.OpenForms(new DeleteProduct());
-            this.btnProductList.Visible = true;
-            this.btnEdit.Visible = false;
         }
 
         private void btnProductList_Click(object sender, EventArgs e)
         {
             this.OpenForms(ltPct);
-            this.btnProductList.Visible = false;
-            this.btnEdit.Visible = true;
+            this.btnProductList.Enabled = false;
+            this.btnEdit.Enabled = true;
         }
     }
 }

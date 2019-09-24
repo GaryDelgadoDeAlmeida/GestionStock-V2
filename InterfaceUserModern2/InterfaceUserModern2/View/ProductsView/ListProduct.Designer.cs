@@ -42,15 +42,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 59);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 22);
+            this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "List of products";
             // 
             // dataGridListProducts
             // 
+            this.dataGridListProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridListProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridListProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridListProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -61,54 +63,65 @@
             this.Price,
             this.Stock});
             this.dataGridListProducts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridListProducts.Location = new System.Drawing.Point(50, 84);
+            this.dataGridListProducts.Location = new System.Drawing.Point(13, 38);
+            this.dataGridListProducts.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridListProducts.MultiSelect = false;
             this.dataGridListProducts.Name = "dataGridListProducts";
-            this.dataGridListProducts.Size = new System.Drawing.Size(634, 363);
+            this.dataGridListProducts.RowHeadersWidth = 51;
+            this.dataGridListProducts.Size = new System.Drawing.Size(1147, 572);
             this.dataGridListProducts.TabIndex = 12;
             // 
             // Id
             // 
             this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
             this.Id.Width = 50;
             // 
             // ProductName
             // 
             this.ProductName.HeaderText = "ProductName";
+            this.ProductName.MinimumWidth = 6;
             this.ProductName.Name = "ProductName";
+            this.ProductName.Width = 125;
             // 
             // Category
             // 
             this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
             this.Category.Name = "Category";
+            this.Category.Width = 125;
             // 
             // Description
             // 
             this.Description.HeaderText = "Description";
+            this.Description.MinimumWidth = 6;
             this.Description.Name = "Description";
             this.Description.Width = 140;
             // 
             // Price
             // 
             this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             this.Price.Width = 60;
             // 
             // Stock
             // 
             this.Stock.HeaderText = "Stock";
+            this.Stock.MinimumWidth = 6;
             this.Stock.Name = "Stock";
             this.Stock.Width = 50;
             // 
             // ListProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 490);
+            this.ClientSize = new System.Drawing.Size(1200, 664);
             this.Controls.Add(this.dataGridListProducts);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListProduct";
             this.Text = "ListProducts";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListProducts)).EndInit();
