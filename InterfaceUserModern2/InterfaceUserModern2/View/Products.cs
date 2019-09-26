@@ -41,6 +41,8 @@ namespace InterfaceUserModern2.View
         private void btnNew_Click(object sender, EventArgs e)
         {
             this.OpenForms(new AddProduct());
+            this.btnProductList.Enabled = true;
+            this.btnEdit.Enabled = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -77,8 +79,11 @@ namespace InterfaceUserModern2.View
             {
                 deleteProduct.cmbDeleteProduct.Items.Add(data[i]);
             }
-            
+
+            deleteProduct.cmbDeleteProduct.Text = "-- Choisir le produit --";
             this.OpenForms(deleteProduct);
+            this.btnProductList.Enabled = true;
+            this.btnEdit.Enabled = false;
         }
 
         private void btnProductList_Click(object sender, EventArgs e)

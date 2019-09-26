@@ -16,5 +16,17 @@ namespace InterfaceUserModern2.View.ProductsView
         {
             InitializeComponent();
         }
+
+        private void BtnDeleteProduct_Click(object sender, EventArgs e)
+        {
+            if(this.cmbDeleteProduct.Text != "-- Choisir le produit --")
+            {
+                MessageBox.Show(this.cmbDeleteProduct.Text.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Veuillez choisir un produit à supprimer");
+            }
+        }
     }
 }
