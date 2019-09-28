@@ -81,12 +81,14 @@ namespace InterfaceUserModern2
                 this.pnlMenu.Size = new Size(45, this.pnlMenu.Size.Height);
                 this.picHome.Size = new Size(40, 40);
                 this.picHome.Location = new Point(3, 12);
+                this.visibleStatusSocialLink(false);
             }
             else
             {
                 this.pnlMenu.Size = new Size(200, this.pnlMenu.Size.Height);
                 this.picHome.Size = new Size(180, 100);
                 this.picHome.Location = new Point(13, 12);
+                this.visibleStatusSocialLink(true);
             }
         }
 
@@ -148,6 +150,13 @@ namespace InterfaceUserModern2
         private void PicPortFolio_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://gary-delgado-de-almeida.000webhostapp.com/");
+        }
+
+        private void visibleStatusSocialLink(bool etat)
+        {
+            this.picGitHub.Visible = etat;
+            this.picLinkedIn.Visible = etat;
+            this.picPortFolio.Visible = etat;
         }
     }
 }

@@ -169,12 +169,6 @@
     <Compile Include="View\SalesView\AddSales.Designer.cs">
       <DependentUpon>AddSales.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\SalesView\DeleteSales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\SalesView\DeleteSales.Designer.cs">
-      <DependentUpon>DeleteSales.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\SalesView\EditSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +186,12 @@
     </Compile>
     <Compile Include="View\Shopping.Designer.cs">
       <DependentUpon>Shopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShoppingView\ListShopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ShoppingView\ListShopping.Designer.cs">
+      <DependentUpon>ListShopping.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Suppliers.cs">
       <SubType>Form</SubType>
@@ -266,9 +266,6 @@
     <EmbeddedResource Include="View\SalesView\AddSales.resx">
       <DependentUpon>AddSales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\SalesView\DeleteSales.resx">
-      <DependentUpon>DeleteSales.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\SalesView\EditSales.resx">
       <DependentUpon>EditSales.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Shopping.resx">
       <DependentUpon>Shopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShoppingView\ListShopping.resx">
+      <DependentUpon>ListShopping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Suppliers.resx">
       <DependentUpon>Suppliers.cs</DependentUpon>
@@ -326,6 +326,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

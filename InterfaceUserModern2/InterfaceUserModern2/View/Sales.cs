@@ -25,28 +25,28 @@ namespace InterfaceUserModern2.View
         {
             // code ...
             this.OpenForms(new AddSales());
-            this.enabledButtonEditOrList(true, "List");
+            this.enabledButton(true, "List");
         }
 
         private void BtnEditSales_Click(object sender, EventArgs e)
         {
             // code ...
             this.OpenForms(new EditSales());
-            this.enabledButtonEditOrList(true, "List");
+            this.enabledButton(true, "List");
         }
 
         private void BtnDeleteSales_Click(object sender, EventArgs e)
         {
             // code ...
-            this.OpenForms(new DeleteSales());
-            this.enabledButtonEditOrList(true, "List");
+            MessageBox.Show("Select a row in the data table to delete.");
+            this.enabledButton(true, "Edit");
         }
 
         private void BtnListSales_Click(object sender, EventArgs e)
         {
             // code ...
             this.OpenForms(this.listSales);
-            this.enabledButtonEditOrList(true, "Edit");
+            this.enabledButton(true, "Edit");
         }
 
 
@@ -76,7 +76,7 @@ namespace InterfaceUserModern2.View
         /// </summary>
         /// <param name="etat"></param>
         /// <param name="type"></param>
-        private void enabledButtonEditOrList(bool etat, string type = null)
+        private void enabledButton(bool etat, string type = null)
         {
             switch (type)
             {

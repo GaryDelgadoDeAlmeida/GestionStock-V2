@@ -36,11 +36,12 @@
             // 
             // txtHour
             // 
+            this.txtHour.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHour.AutoSize = true;
             this.txtHour.BackColor = System.Drawing.SystemColors.Control;
             this.txtHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtHour.Location = new System.Drawing.Point(374, 122);
+            this.txtHour.Location = new System.Drawing.Point(374, 196);
             this.txtHour.Name = "txtHour";
             this.txtHour.Size = new System.Drawing.Size(318, 113);
             this.txtHour.TabIndex = 0;
@@ -49,11 +50,12 @@
             // 
             // txtDate
             // 
+            this.txtDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDate.AutoSize = true;
             this.txtDate.BackColor = System.Drawing.SystemColors.Control;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.ForeColor = System.Drawing.Color.SlateGray;
-            this.txtDate.Location = new System.Drawing.Point(295, 246);
+            this.txtDate.Location = new System.Drawing.Point(295, 320);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(159, 58);
             this.txtDate.TabIndex = 1;
@@ -69,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 603);
+            this.ClientSize = new System.Drawing.Size(1200, 664);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.txtHour);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
