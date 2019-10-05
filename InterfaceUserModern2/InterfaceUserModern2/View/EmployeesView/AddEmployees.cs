@@ -16,5 +16,21 @@ namespace InterfaceUserModern2.View.EmployeesView
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // code ...
+        }
+
+        private void btnErase_Click(object sender, EventArgs e)
+        {
+            // code ...
+            this.txtLastName.Clear();
+            this.txtFirstName.Clear();
+            this.txtAddress.Clear();
+            this.txtPhoneNumber.Clear();
+            this.txtEmail.Clear();
+            this.txtEmployee.Clear();
+        }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace InterfaceUserModern2.View.EmployeesView
+﻿namespace InterfaceUserModern2.View.SuppliersView
 {
-    partial class ListEmployees
+    partial class ListSuppliers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridSuppliers = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.company = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.postalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.country = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSuppliers)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridSuppliers
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridSuppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridSuppliers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.firstName,
-            this.lastName,
-            this.phoneNumber,
-            this.email,
+            this.company,
+            this.numTel,
+            this.companyEmail,
             this.address,
             this.postalCode,
             this.city,
             this.country,
-            this.employee});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 561);
-            this.dataGridView1.TabIndex = 0;
+            this.quantity,
+            this.price});
+            this.dataGridSuppliers.Location = new System.Drawing.Point(12, 12);
+            this.dataGridSuppliers.Name = "dataGridSuppliers";
+            this.dataGridSuppliers.RowHeadersWidth = 51;
+            this.dataGridSuppliers.RowTemplate.Height = 24;
+            this.dataGridSuppliers.Size = new System.Drawing.Size(1176, 561);
+            this.dataGridSuppliers.TabIndex = 0;
             // 
             // id
             // 
@@ -73,33 +73,26 @@
             this.id.Name = "id";
             this.id.Width = 125;
             // 
-            // firstName
+            // company
             // 
-            this.firstName.HeaderText = "FirstName";
-            this.firstName.MinimumWidth = 6;
-            this.firstName.Name = "firstName";
-            this.firstName.Width = 125;
+            this.company.HeaderText = "Company";
+            this.company.MinimumWidth = 6;
+            this.company.Name = "company";
+            this.company.Width = 125;
             // 
-            // lastName
+            // numTel
             // 
-            this.lastName.HeaderText = "LastName";
-            this.lastName.MinimumWidth = 6;
-            this.lastName.Name = "lastName";
-            this.lastName.Width = 125;
+            this.numTel.HeaderText = "CompanyPhone";
+            this.numTel.MinimumWidth = 6;
+            this.numTel.Name = "numTel";
+            this.numTel.Width = 125;
             // 
-            // phoneNumber
+            // companyEmail
             // 
-            this.phoneNumber.HeaderText = "PhoneNumber";
-            this.phoneNumber.MinimumWidth = 6;
-            this.phoneNumber.Name = "phoneNumber";
-            this.phoneNumber.Width = 125;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.Width = 125;
+            this.companyEmail.HeaderText = "CompanyEmail";
+            this.companyEmail.MinimumWidth = 6;
+            this.companyEmail.Name = "companyEmail";
+            this.companyEmail.Width = 125;
             // 
             // address
             // 
@@ -129,39 +122,46 @@
             this.country.Name = "country";
             this.country.Width = 125;
             // 
-            // employee
+            // quantity
             // 
-            this.employee.HeaderText = "Employee";
-            this.employee.MinimumWidth = 6;
-            this.employee.Name = "employee";
-            this.employee.Width = 125;
+            this.quantity.HeaderText = "Quantity";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.Width = 125;
             // 
-            // ListEmployees
+            // price
+            // 
+            this.price.HeaderText = "Price";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.Width = 125;
+            // 
+            // ListSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 585);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridSuppliers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ListEmployees";
-            this.Text = "ListEmployees";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Name = "ListSuppliers";
+            this.Text = "ListSuppliers";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSuppliers)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridSuppliers;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn company;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numTel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companyEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
         private System.Windows.Forms.DataGridViewTextBoxColumn postalCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn city;
         private System.Windows.Forms.DataGridViewTextBoxColumn country;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }
 }

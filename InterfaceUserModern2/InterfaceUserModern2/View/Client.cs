@@ -38,11 +38,6 @@ namespace InterfaceUserModern2.View
             fS.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnNewClient_Click(object sender, EventArgs e)
         {
             this.OpenForms(new NewClient());

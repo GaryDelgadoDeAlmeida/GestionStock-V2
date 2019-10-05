@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Client.cs" />
+    <Compile Include="Class\Collection.cs" />
+    <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\Personne.cs" />
+    <Compile Include="Class\Product.cs" />
+    <Compile Include="Class\Sales.cs" />
+    <Compile Include="Class\Shopping.cs" />
+    <Compile Include="Class\Supplier.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +207,24 @@
     <Compile Include="View\Suppliers.Designer.cs">
       <DependentUpon>Suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SuppliersView\AddSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\AddSuppliers.Designer.cs">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuppliersView\EditSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\EditSuppliers.Designer.cs">
+      <DependentUpon>EditSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuppliersView\ListSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\ListSuppliers.Designer.cs">
+      <DependentUpon>ListSuppliers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +307,15 @@
     <EmbeddedResource Include="View\Suppliers.resx">
       <DependentUpon>Suppliers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\AddSuppliers.resx">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\EditSuppliers.resx">
+      <DependentUpon>EditSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\ListSuppliers.resx">
+      <DependentUpon>ListSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -324,9 +359,7 @@
   <ItemGroup>
     <None Include="Resources\cropped-Favicon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Class\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>

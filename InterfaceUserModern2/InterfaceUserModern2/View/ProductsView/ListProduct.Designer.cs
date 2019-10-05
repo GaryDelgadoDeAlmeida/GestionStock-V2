@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridListProducts = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,20 +38,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListProducts)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "List of products";
-            // 
             // dataGridListProducts
             // 
-            this.dataGridListProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridListProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridListProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridListProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridListProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -63,12 +53,12 @@
             this.Price,
             this.Stock});
             this.dataGridListProducts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridListProducts.Location = new System.Drawing.Point(13, 38);
+            this.dataGridListProducts.Location = new System.Drawing.Point(4, 4);
             this.dataGridListProducts.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridListProducts.MultiSelect = false;
             this.dataGridListProducts.Name = "dataGridListProducts";
             this.dataGridListProducts.RowHeadersWidth = 51;
-            this.dataGridListProducts.Size = new System.Drawing.Size(1147, 572);
+            this.dataGridListProducts.Size = new System.Drawing.Size(1192, 594);
             this.dataGridListProducts.TabIndex = 12;
             // 
             // Id
@@ -117,21 +107,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 664);
+            this.ClientSize = new System.Drawing.Size(1200, 603);
             this.Controls.Add(this.dataGridListProducts);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListProduct";
             this.Text = "ListProducts";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListProducts)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.DataGridView dataGridListProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private new System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
