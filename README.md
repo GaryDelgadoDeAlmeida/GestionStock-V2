@@ -1,2 +1,2 @@
-# SalesApp
-Sales Application (Windows Form - WF)
+# GestionStock-V2
+Gestion Stock Application (Windows Form - WF)
