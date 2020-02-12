@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63A44A21-8AE5-4ED6-9710-9041BA3FC6A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InterfaceUserModern2</RootNamespace>
+    <AssemblyName>InterfaceUserModern2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Client.cs" />
+    <Compile Include="Class\Collection.cs" />
+    <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\Personne.cs" />
+    <Compile Include="Class\Product.cs" />
+    <Compile Include="Class\Sale.cs" />
+    <Compile Include="Class\Shopping.cs" />
+    <Compile Include="Class\Supplier.cs" />
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientsView\EditClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ClientsView\EditClients.Designer.cs">
+      <DependentUpon>EditClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientsView\ListClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ClientsView\ListClients.Designer.cs">
+      <DependentUpon>ListClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientsView\NewClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ClientsView\NewClients.Designer.cs">
+      <DependentUpon>NewClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeesView\AddEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeesView\AddEmployees.Designer.cs">
+      <DependentUpon>AddEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeesView\DeleteEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeesView\DeleteEmployees.Designer.cs">
+      <DependentUpon>DeleteEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeesView\EditEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeesView\EditEmployees.Designer.cs">
+      <DependentUpon>EditEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeesView\ListEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeesView\ListEmployees.Designer.cs">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsView\AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductsView\AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsView\DeleteProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductsView\DeleteProducts.Designer.cs">
+      <DependentUpon>DeleteProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsView\EditProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductsView\EditProducts.Designer.cs">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsView\ListProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductsView\ListProducts.Designer.cs">
+      <DependentUpon>ListProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesView\AddSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SalesView\AddSales.Designer.cs">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesView\EditSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SalesView\EditSales.Designer.cs">
+      <DependentUpon>EditSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesView\ListSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SalesView\ListSales.Designer.cs">
+      <DependentUpon>ListSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Shoppings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Shoppings.Designer.cs">
+      <DependentUpon>Shoppings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShoppingsView\ListShopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ShoppingsView\ListShopping.Designer.cs">
+      <DependentUpon>ListShopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuppliersView\AddSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\AddSuppliers.Designer.cs">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuppliersView\EditSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\EditSuppliers.Designer.cs">
+      <DependentUpon>EditSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuppliersView\ListSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuppliersView\ListSuppliers.Designer.cs">
+      <DependentUpon>ListSuppliers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ClientsView\EditClients.resx">
+      <DependentUpon>EditClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ClientsView\ListClients.resx">
+      <DependentUpon>ListClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ClientsView\NewClients.resx">
+      <DependentUpon>NewClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeesView\AddEmployees.resx">
+      <DependentUpon>AddEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeesView\DeleteEmployees.resx">
+      <DependentUpon>DeleteEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeesView\EditEmployees.resx">
+      <DependentUpon>EditEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeesView\ListEmployees.resx">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductsView\AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductsView\DeleteProducts.resx">
+      <DependentUpon>DeleteProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductsView\EditProducts.resx">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductsView\ListProducts.resx">
+      <DependentUpon>ListProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesView\AddSales.resx">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesView\EditSales.resx">
+      <DependentUpon>EditSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesView\ListSales.resx">
+      <DependentUpon>ListSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Shoppings.resx">
+      <DependentUpon>Shoppings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShoppingsView\ListShopping.resx">
+      <DependentUpon>ListShopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\AddSuppliers.resx">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\EditSuppliers.resx">
+      <DependentUpon>EditSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuppliersView\ListSuppliers.resx">
+      <DependentUpon>ListSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeeCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-Favicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Collection.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Collection_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Collection.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

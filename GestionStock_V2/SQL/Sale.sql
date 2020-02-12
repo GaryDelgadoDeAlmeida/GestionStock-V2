@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Sale] (
+    [Id]        INT NOT NULL,
+    [ProductID] INT NOT NULL FOREIGN KEY REFERENCES Product(Id),
+    [ClientID]  INT NOT NULL FOREIGN KEY REFERENCES Client(Id),
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
