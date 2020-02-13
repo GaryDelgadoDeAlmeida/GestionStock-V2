@@ -33,7 +33,6 @@ namespace GestionStock_V2.Class
             this.lesEmployees = lesEmployees;
         }
 
-
         public Collection()
         {
             this.lesClients = new List<Client>();
