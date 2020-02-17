@@ -35,17 +35,15 @@
             this.phoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.country = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Job = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -56,10 +54,8 @@
             this.phoneNumber,
             this.email,
             this.address,
-            this.postalCode,
-            this.city,
-            this.country,
-            this.employee});
+            this.Job,
+            this.Pay});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -109,33 +105,19 @@
             this.address.Name = "address";
             this.address.Width = 125;
             // 
-            // postalCode
+            // Job
             // 
-            this.postalCode.HeaderText = "PostalCode";
-            this.postalCode.MinimumWidth = 6;
-            this.postalCode.Name = "postalCode";
-            this.postalCode.Width = 125;
+            this.Job.HeaderText = "Job";
+            this.Job.MinimumWidth = 6;
+            this.Job.Name = "Job";
+            this.Job.Width = 125;
             // 
-            // city
+            // Pay
             // 
-            this.city.HeaderText = "City";
-            this.city.MinimumWidth = 6;
-            this.city.Name = "city";
-            this.city.Width = 125;
-            // 
-            // country
-            // 
-            this.country.HeaderText = "Country";
-            this.country.MinimumWidth = 6;
-            this.country.Name = "country";
-            this.country.Width = 125;
-            // 
-            // employee
-            // 
-            this.employee.HeaderText = "Employee";
-            this.employee.MinimumWidth = 6;
-            this.employee.Name = "employee";
-            this.employee.Width = 125;
+            this.Pay.HeaderText = "Pay";
+            this.Pay.MinimumWidth = 6;
+            this.Pay.Name = "Pay";
+            this.Pay.Width = 125;
             // 
             // ListEmployees
             // 
@@ -160,9 +142,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn postalCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn city;
-        private System.Windows.Forms.DataGridViewTextBoxColumn country;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Job;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pay;
     }
 }
